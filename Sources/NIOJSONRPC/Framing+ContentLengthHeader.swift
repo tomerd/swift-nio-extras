@@ -14,7 +14,7 @@
 
 import NIO
 
-extension NIOJSONRPCFraming {
+extension NIOJSONRPC.Framing {
     /// `ContentLengthHeaderFrameEncoder` is responsible for emitting JSON-RPC wire protocol with 'Content-Length'
     /// HTTP-like headers as used by for example by LSP (Language Server Protocol).
     public final class ContentLengthHeaderFrameEncoder: ChannelOutboundHandler {

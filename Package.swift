@@ -25,8 +25,10 @@ var targets: [PackageDescription.Target] = [
             linkerSettings: [
                 .linkedLibrary("z")
             ]),
+    .target(name: "NIOJSONRPC", dependencies: ["NIOExtras", "NIOFoundationCompat"]),
     .testTarget(name: "NIOExtrasTests", dependencies: ["NIOExtras", "NIOTestUtils"]),
     .testTarget(name: "NIOHTTPCompressionTests", dependencies: ["NIOHTTPCompression"]),
+    .testTarget(name: "NIOJSONRPCTests", dependencies: ["NIOJSONRPC"]),
 ]
 
 let package = Package(

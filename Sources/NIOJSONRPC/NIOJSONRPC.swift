@@ -12,6 +12,6 @@
 //
 //===----------------------------------------------------------------------===//
 
-public enum NIOJSONRPCFraming {
-    // just a name-space
+/// namespace
+public enum NIOJSONRPC {
 }
